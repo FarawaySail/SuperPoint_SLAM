@@ -7,7 +7,7 @@
 
 ### 模块间关系
 
-![](/home/tsui/workspace/SuperPoint_SLAM/modules.png)
+![](./modules.png)
 
 为了保证时间能够对上，图中的四步能够保持一致（在特征点处理图片时，不会再有新的图片保存下来），我们设计了如下方法：
 
