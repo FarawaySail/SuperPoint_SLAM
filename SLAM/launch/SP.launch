@@ -1,0 +1,8 @@
+<launch>  
+
+	<!-- orb slam  -->
+	<node pkg="ORB_SLAM2_SP" name="SP" type="SP" args="$(find ORB_SLAM2_SP)/../../../Vocabulary/ORBvoc.txt $(find ORB_SLAM2_SP)/Zdzn.yaml" output="screen">
+		<remap from="/camera/depth_registered/image_raw" to="/camera/depth/image_raw"/>
+    	</node>
+	<node pkg="rviz" name="rviz" type="rviz" />
+</launch>
